@@ -9,6 +9,5 @@ curl https://github.com/aneelkkhatri/avconv-buildpack/releases/download/v0.0.1/a
 #mkdir vendor
 #mkdir bin
 tar -xvf avconv.tar.gz
-ls -alh
-mv ./lib/libmp3lame.so.0 /usr/local/lib
+export LD_LIBRARY_PATH=/app/lib
 #mv ./vendor/bin/avconv ./bin/avconv
