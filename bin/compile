@@ -11,6 +11,6 @@ curl https://github.com/aneelkkhatri/avconv-buildpack/releases/download/v0.0.2/l
 tar -xvf libav-release-64bit-static.tar.xz
 #export LD_LIBRARY_PATH=/app/lib
 ls -alh
-mv ./libav-12.1-64bit-static ./bin
+cp -rf ./libav-12.1-64bit-static/* ./bin/*
 ls -alh
 #mv ./vendor/bin/avconv ./bin/avconv
