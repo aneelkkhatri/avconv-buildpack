@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "-----> Installing avconv"
+# change to the the BUILD_DIR ($1)
+cd $1
+# download the binary (-O) silently (-s)
+curl https://github.com/aneelkkhatri/avconv-buildpack/releases/download/v0.0.1/avconv.tar.gz -s -O -L
+# untar the binary to the directory we want
+mkdir vendor
+tar -C vendor -xvf avconv.tar.gz
+mv ./vendor/avconv ./bin/avconv
