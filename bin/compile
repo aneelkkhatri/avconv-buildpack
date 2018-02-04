@@ -8,4 +8,5 @@ curl https://github.com/aneelkkhatri/avconv-buildpack/releases/download/v0.0.1/a
 # untar the binary to the directory we want
 mkdir vendor
 tar -C vendor -xvf avconv.tar.gz
-mv ./vendor/avconv ./bin/avconv
+ls -alh
+mv ./vendor/bin/avconv /bin/avconv
