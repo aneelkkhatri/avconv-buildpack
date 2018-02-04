@@ -9,4 +9,4 @@ curl https://github.com/aneelkkhatri/avconv-buildpack/releases/download/v0.0.1/a
 mkdir vendor
 tar -C vendor -xvf avconv.tar.gz
 ls -alh
-mv ./vendor/avconv ./bin/avconv
+mv ./vendor/bin/avconv /bin/avconv
