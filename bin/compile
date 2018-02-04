@@ -6,6 +6,8 @@ cd $1
 # download the binary (-O) silently (-s)
 curl https://github.com/aneelkkhatri/avconv-buildpack/releases/download/v0.0.1/avconv.tar.gz -s -O -L
 # untar the binary to the directory we want
+mkdir vendor
+mkdir bin
 tar -C vendor -xvf avconv.tar.gz
 ls -alh
 mv ./vendor/bin/avconv ./bin/avconv
